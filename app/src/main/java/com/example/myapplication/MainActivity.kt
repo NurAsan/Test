@@ -28,12 +28,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MyApplicationTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    GreetingText("Happy Birthday Nurislam", from = "Janat")
+            MyApplicationTheme(){
+                Surface(modifier = Modifier.fillMaxSize(),
+                    color = Color.White){
+
                 }
             }
+
         }
     }
 }
@@ -41,33 +42,6 @@ class MainActivity : ComponentActivity() {
 
 
 @Composable
-fun GreetingText(message: String, from:String, modifier:Modifier= Modifier) {
-    Column(
-        verticalArrangement = Arrangement.Center,
-        modifier = modifier
-    ) {
-        Text(
-            text = message,
-            fontSize = 90.sp,
-            lineHeight = 116.sp,
-            textAlign = TextAlign.Center
-        )
-        Text(
-            text = from,
-            fontSize = 36.sp,
-            modifier = Modifier
-                .padding(16.dp)
-                .align(alignment = Alignment.End)
-        )
-    }
+fun BusinessCard(){
 
-
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    MyApplicationTheme {
-        GreetingText("Happy Birthday Nurislam", from = "From Janat")
-    }
 }
