@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
             MyApplicationTheme(){
                 Surface(modifier = Modifier.fillMaxSize(),
                     color = Color.White){
-
+                    BusinessCard()
                 }
             }
 
@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
 }
 
 
-@Preview
+
 @Composable
 fun BusinessCard(){
     Column(
