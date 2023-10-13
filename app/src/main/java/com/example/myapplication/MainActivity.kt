@@ -55,5 +55,8 @@ fun BusinessCard(){
         
         Spacer(modifier = Modifier.height(4.dp))
         Text(text = "Boss company", fontSize = 16.sp)
+        
+        Spacer(modifier = Modifier.height(4.dp))
+        Text(text = "Email: nurisASKO@gmail", fontSize = 12.sp)
     }
 }
